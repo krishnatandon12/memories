@@ -30,7 +30,7 @@ const postMessage = mongoose.Schema({
 //Now we have a Schema. Let's convert it into a Model
 
 const PostMessage = mongoose.model('PostMessage', postMessage);
-
+//PostMessage - This is just a reference name to the schema created with name "postMessage".
 //Exporting a mongoose model from a postMessage file and later on this model
 //we will run commands such as find, create, delete and update.
 export default PostMessage;
