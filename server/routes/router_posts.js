@@ -1,5 +1,5 @@
 import express from "express";
-import { getPosts } from "../controller/controller_posts.js";
+import { getPosts, createPost } from "../controller/controller_posts.js";
 
 const router = express.Router();
 
@@ -17,6 +17,8 @@ router.get("/", getPosts);
 //router.get("/", method1);
 //router.get("/", method2);
 //router.get("/", method3);
+
+router.post("/getPosts", createPost);
 
 //So here we will easily make calls to our controllers bu mentioning fn names and writing logic in controllers.
 
